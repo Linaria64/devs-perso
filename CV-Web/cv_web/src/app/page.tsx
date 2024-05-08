@@ -6,10 +6,10 @@
  */
 function Nav() {
   return (
-    <header className="  bg-gray-500">
+    <header>
     <nav>
-      <ol className="flex gap-2">
-        <li><a href="#about">A Propos</a></li>
+      <ol className="flex gap-2 text-[#7a9fd7]/[07] ">
+        <li className="ml-auto"><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
         <li><a href="#works">Parcours</a></li>
         <li><a href="#">Portofolio</a></li>
@@ -26,9 +26,9 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <section className=" border-solid border-2 border-blue-800 bg-amber-700">
-    <div>
-     <h1>{title}</h1>
+  <section className="mt-3 mx-5 rounded-lg  bg-[#9e826f]">
+    <div className="border-transparent border ">
+     <h1 className="text-center bg-[#c7bab4] w-6/12 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
    {children}
    </section>
@@ -45,17 +45,16 @@ function Container({title,children}:any) {
   function Text({text}:any) {
 
     return (
-      <div>
-                  <p>{text}</p>
-
+      <div className="rounded-lg bg-[#41434c] w-1/4 mx-auto">
+        <p className="text-[#efe0fe]">{text}</p>
       </div>
     )
   }
 
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
-      <div>
-        <ul>
+      <div className="rounded-lg bg-[#41434c] w-1/4">
+        <ul className="text-[#efe0fe]">
           <li><a href={Llinkedin}>{gitHub}</a></li>
           <li><a href={Lgit}>{LinkeDin}</a></li>
         </ul>
@@ -64,32 +63,31 @@ function Container({title,children}:any) {
   }
 
   function Icons({icons,text}:any){
-      return (
-        <div>
-                  <ul>
+    return (
+      <div  className="rounded-lg bg-[#41434c] flex flex-row w-6/12 m-auto">
+        <ul>
           <li>{icons}<p>{text}</p></li>
         </ul>
 
-        </div>
+      </div>
       )
   }
 
   function Avatar({img}:any) {
     return (
       <div>
-              <h1>{img}</h1>
-
+       <h1>{img}</h1>
       </div>
     ) 
   }
 
 function SkillTitle({title}:any) {
-  return <div> <h2>{title}</h2> </div>
+  return <div><h2>{title}</h2></div>
 }
 
 function ContainerWorks({children}:any) {
   return (
-  <div className="bg-gray-400">{children}</div>
+  <div className="">{children}</div>
 )
 }
 
@@ -101,8 +99,8 @@ function ContainerWorks({children}:any) {
  */
 function Footer({icons}:any) {
   return (
-    <footer>
-    <div className="bg-gray-400">
+    <footer className="">
+    <div className="bg-[#41434c] w-1/4 rounded-lg m-auto">
 <a href="">{icons}</a>  
   </div>
     </footer>
@@ -117,7 +115,7 @@ function Footer({icons}:any) {
 export default function Site() {
 
 return (
-   <main className="w-full h-full">
+   <main className="w-full h-full bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3]">
     <Nav/>
     <section>
         <Container id="About" title="A Propos">
