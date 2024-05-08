@@ -11,7 +11,7 @@ function Nav() {
       <ol className="flex gap-2">
         <li><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
-        <li><a href="#">Parcours</a></li>
+        <li><a href="#works">Parcours</a></li>
         <li><a href="#">Portofolio</a></li>
         <li><a href="#">Contact</a></li>
       </ol>
@@ -26,12 +26,12 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <div className=" border-solid border-2 border-blue-800 bg-amber-700">
+  <section className=" border-solid border-2 border-blue-800 bg-amber-700">
     <div>
      <h1>{title}</h1>
     </div>
    {children}
-   </div>
+   </section>
 )
 }
 
@@ -117,128 +117,118 @@ function Footer({icons}:any) {
 export default function Site() {
 
 return (
-  <main className="w-full h-full">
-
-      <Nav/>
-
-    <div>
-      <Container id="About" title="A Propos">
-        <Avatar img="mettre une image ici et remplacer le h1 par un img:s"/>
-          <Text text="lorem ipsum"/>
-          <Links gitHub="Lien GitHub"
+   <main className="w-full h-full">
+    <Nav/>
+    <section>
+        <Container id="About" title="A Propos">
+           <Avatar img="mettre une image ici et remplacer le h1 par un img:s"/>
+           <Text text="lorem ipsum"/>
+            <Links gitHub="Lien GitHub"
                 LinkeDin="Lien LinkeDin"   
                 Llinkedin = "https://www.youtube.com/results?search_query=jsx+tuto+"
                 Lgit = "https://www.youtube.com/results?search_query=jsx+tuto+"    
-        />
-        <Icons icons="icons"
-               text="text" 
-        />
-        <Icons icons="icons"
-               text="text" 
-        />
-        <Icons icons="icons"
-               text="text" 
-        />
-        <Icons icons="icons"
-               text="text" 
-        />
-        
-      </Container>
+            />
+           <Icons icons="icons"
+                text="text" 
+           />
+           <Icons icons="icons"
+                text="text" 
+           />
+           <Icons icons="icons"
+                text="text" 
+           />
+           <Icons icons="icons"
+                text="text" 
+           />
+        </Container>
 
-      <Container id="skills" title="Compétence">
+        <Container id="skills" title="Compétence">
           <SkillTitle title="Language"/>
           <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-
-        <SkillTitle title="Framework"/>
+                text="text" 
+          />
           <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+
+          <SkillTitle title="Framework"/>
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
           <SkillTitle title="others"/>
           <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-            <Icons icons="icons"
-               text="text" 
-        />
-
-
-      </Container>
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+          <Icons icons="icons"
+                text="text" 
+          />
+        </Container>
         
-      <Container  title="Parcours">
-        <ContainerWorks className="bg-gray-400">
-          <SkillTitle title="un titre"/>
-          <Text text="un text"/>
-        </ContainerWorks>
+        <Container id="works" title="Parcours">
+          <ContainerWorks className="bg-gray-400">
+            <SkillTitle title="un titre"/>
+            <Text text="un text"/>
+          </ContainerWorks>
 
-        <ContainerWorks className="bg-gray-400">
-          <SkillTitle title="un titre"/>
-          <Text text="un text"/>
-        </ContainerWorks>
+          <ContainerWorks className="bg-gray-400">
+            <SkillTitle title="un titre"/>
+            <Text text="un text"/>
+          </ContainerWorks>
 
 
-        <ContainerWorks className="bg-gray-400">
-          <SkillTitle title="un titre"/>
-          <Text text="un text"/>
-        </ContainerWorks>
-
-      </Container>
-
-      <Container  title="Portofolio"/>
-    </div>
-   
-
-  <Container>
-     <Footer icons="telephone"/>
-     <Footer icons="mail"/>
-     <Footer icons="dl"/>
-
-  </Container>
-   
-    
+          <ContainerWorks className="bg-gray-400">
+            <SkillTitle title="un titre"/>
+            <Text text="un text"/>
+          </ContainerWorks>
+        </Container>
+        
+        <Container  title="Portofolio"/>
+    </section>
+  
+        <Container>
+          <Footer icons="telephone"/>
+          <Footer icons="mail"/>
+          <Footer icons="dl"/>
+        </Container>  
   </main>
   );
 }
