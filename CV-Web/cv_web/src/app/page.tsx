@@ -3,6 +3,11 @@ import Image from 'next/image'
 import {AiFillGithub} from 'react-icons/ai'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {AiFillHome} from 'react-icons/ai'
+import {AiFillCode} from 'react-icons/ai'
+import {AiFillDatabase} from 'react-icons/ai'
+import {AiOutlineDocker} from 'react-icons/ai'
+import { IoLogoFigma } from "react-icons/io5"
+import { IoIosGitBranch } from "react-icons/io";
 /**
  * Menu de navigation
  * @returns NavJSX
@@ -140,19 +145,22 @@ return (
               </div>
               <div className="border-solid  border-4 border-red-500 w-6/12">
               <Text text="lorem ipsum"/>
-              <div  className="rounded-lg bg-[#41434c] flex flex-row">
-              <Icons icons="icons"
-                    text="text" 
+              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-4">
+              <Icons icons=<AiFillCode/>
+                    text="Front-End" 
               />
-              <Icons icons="icons"
-                    text="text" 
+              <Icons icons=<AiFillDatabase/>
+                    text="Back-end" 
               />
               
-              <Icons icons="icons"
-                    text="text" 
+              <Icons icons=<AiOutlineDocker/>
+                    text="Docker" 
               />
-              <Icons icons="icons"
-                    text="text" 
+              <Icons icons=<IoIosGitBranch/>
+                    text="Git" 
+              />
+                <Icons icons=<IoLogoFigma/>
+                    text="figma" 
               />
 
               </div>
