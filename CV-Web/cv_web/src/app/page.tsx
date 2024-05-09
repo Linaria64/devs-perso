@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import {AiFillGithub} from 'react-icons/ai'
 import {AiFillLinkedin} from 'react-icons/ai'
+import {AiFillHome} from 'react-icons/ai'
 /**
  * Menu de navigation
  * @returns NavJSX
@@ -11,7 +12,8 @@ function Nav() {
     <header>
     <nav>
       <ol className="flex gap-2 text-[#7a9fd7]/[07] ">
-        <li className="ml-auto"><a href="#about">A Propos</a></li>
+        <li className="ml-auto"><a href=""><AiFillHome/></a></li>
+        <li><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
         <li><a href="#works">Parcours</a></li>
         <li><a href="#">Portofolio</a></li>
