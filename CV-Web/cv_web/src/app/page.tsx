@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image'
 /**
  * Menu de navigation
  * @returns NavJSX
@@ -64,7 +64,7 @@ function Container({title,children}:any) {
 
   function Icons({icons,text}:any){
     return (
-      <div  className="rounded-lg bg-[#41434c] flex flex-row w-6/12 m-auto">
+      <div>
         <ul>
           <li>{icons}<p>{text}</p></li>
         </ul>
@@ -73,10 +73,15 @@ function Container({title,children}:any) {
       )
   }
 
-  function Avatar({img}:any) {
+  function Avatar() {
     return (
       <div>
-       <h1>{img}</h1>
+        <Image className='rounded-lg mx-5 my-5'
+          src="/image/Avatar.png"
+          alt=" "
+          width={200}
+          height={200}
+        />
       </div>
     ) 
   }
@@ -119,25 +124,34 @@ return (
     <Nav/>
     <section>
         <Container id="About" title="A Propos">
-           <Avatar img="mettre une image ici et remplacer le h1 par un img:s"/>
-           <Text text="lorem ipsum"/>
-            <Links gitHub="Lien GitHub"
-                LinkeDin="Lien LinkeDin"   
-                Llinkedin = "https://www.youtube.com/results?search_query=jsx+tuto+"
-                Lgit = "https://www.youtube.com/results?search_query=jsx+tuto+"    
-            />
-           <Icons icons="icons"
-                text="text" 
-           />
-           <Icons icons="icons"
-                text="text" 
-           />
-           <Icons icons="icons"
-                text="text" 
-           />
-           <Icons icons="icons"
-                text="text" 
-           />
+          <div className="flex">
+            <div className="border-solid  border-4 border-red-500 w-6/12">
+                <Avatar/>
+                <Links gitHub="Lien GitHub"
+                      LinkeDin="Lien LinkeDin"   
+                      Llinkedin = "https://www.youtube.com/results?search_query=jsx+tuto+"
+                      Lgit = "https://www.youtube.com/results?search_query=jsx+tuto+"    
+                  />
+              </div>
+              <div className="border-solid  border-4 border-red-500 w-6/12">
+              <Text text="lorem ipsum"/>
+              <div  className="rounded-lg bg-[#41434c] flex flex-row">
+              <Icons icons="icons"
+                    text="text" 
+              />
+              <Icons icons="icons"
+                    text="text" 
+              />
+              <Icons icons="icons"
+                    text="text" 
+              />
+              <Icons icons="icons"
+                    text="text" 
+              />
+
+              </div>
+              </div>
+          </div>
         </Container>
 
         <Container id="skills" title="Compétence">
