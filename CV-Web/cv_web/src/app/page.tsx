@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image'
+import {AiFillGithub} from 'react-icons/ai'
 /**
  * Menu de navigation
  * @returns NavJSX
@@ -54,12 +55,21 @@ function Container({title,children}:any) {
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
       <div className="rounded-lg bg-[#41434c] w-1/4">
-        <ul className="text-[#efe0fe]">
-          <li><a href={Llinkedin}>{gitHub}</a></li>
+       <ul className="text-[#efe0fe]">
+          <li><a  href={Llinkedin}>{gitHub}</a></li>
           <li><a href={Lgit}>{LinkeDin}</a></li>
         </ul>
       </div>
     )
+/**
+ * <link
+  rel="icon"
+  href="/icon?<generated>"
+  type="image/<generated>"
+  sizes="<generated>"
+/>
+ */
+
   }
 
   function Icons({icons,text}:any){
@@ -123,11 +133,12 @@ return (
    <main className="w-full h-full bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3]">
     <Nav/>
     <section>
+      <AiFillGithub/>
         <Container id="About" title="A Propos">
           <div className="flex">
             <div className="border-solid  border-4 border-red-500 w-6/12">
                 <Avatar/>
-                <Links gitHub="Lien GitHub"
+                <Links gitHub="bi:github"
                       LinkeDin="Lien LinkeDin"   
                       Llinkedin = "https://www.youtube.com/results?search_query=jsx+tuto+"
                       Lgit = "https://www.youtube.com/results?search_query=jsx+tuto+"    
@@ -142,6 +153,7 @@ return (
               <Icons icons="icons"
                     text="text" 
               />
+              
               <Icons icons="icons"
                     text="text" 
               />
