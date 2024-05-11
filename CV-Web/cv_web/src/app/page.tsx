@@ -33,7 +33,7 @@ import { IoMdDownload } from "react-icons/io";
  */
 function Nav() {
   return (
-    <header className='border-4 border-purple-500'>
+    <header>
     <nav>
       <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold ">
         <li className="ml-auto "><a href=""><AiFillHome/></a></li>
@@ -54,8 +54,8 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <section className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full  border-4 border-blue-900">
-    <div className="border-transparent border-4 border-yellow-400 ">
+  <section className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full">
+    <div className="border-transparent border-4 ">
      <h1 className="text-center bg-[#c7bab4] w-6/12 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
    {children}
@@ -73,7 +73,7 @@ function Container({title,children}:any) {
   function Text({text}:any) {
 
     return (
-      <div className="rounded-lg bg-[#41434c] m-auto w-4/6  h-4/6 border-4 border-purple-600">
+      <div className="rounded-lg bg-[#41434c] my-5 mx-auto w-5/6 h-3/6 ">
         <p className="text-[#efe0fe]">{text}</p>
       </div>
     )
@@ -81,7 +81,7 @@ function Container({title,children}:any) {
 
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
-      <div className="rounded-lg bg-[#41434c] w-3/6  mx-auto mb-5 border-4 border-neutral-900 ">
+      <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5">
        <ul className="text-[#efe0fe] ">
           <li><a className='flex gap-2'  href={Llinkedin}>{gitHub} gitHub</a></li>
           <li><a className='flex gap-2' href={Lgit}>{LinkeDin} Linkedin</a></li>
@@ -92,7 +92,7 @@ function Container({title,children}:any) {
 
   function Icons({icons,text}:any){
     return (
-        <ul>
+        <ul className='p-1'>
           <li>{icons}<p>{text}</p></li>
         </ul>
 
@@ -101,7 +101,7 @@ function Container({title,children}:any) {
 
   function Avatar() {
     return (
-        <Image className='rounded-lg mx-auto my-5 border-4 w-3/6 border-neutral-900'
+        <Image className='rounded-lg mx-auto my-5 w-3/6'
           src="/image/Avatar.png"
           alt=" "
           width={100}
@@ -144,7 +144,7 @@ function Footer({icons}:any) {
 export default function Site() {
 
 return (
-   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full border-4 border-purple-950">
+   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full ">
     <Nav/>
     <section>
         <Container id="About"   title="A Propos">
@@ -158,9 +158,9 @@ return (
                   />
               </div>
 
-              <div className="w-4/6 border-4 border-neutral-800">
+              <div className="w-4/6">
               <Text text="lorem ipsum"/>
-              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-6 m-auto w-4/6 border-4 p-2 border-neutral-300">
+              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-6  mx-auto w-5/6 h-2/6 ">
               <Icons icons=<AiFillCode/>
                     text="Front-End" 
               />
