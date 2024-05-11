@@ -6,7 +6,7 @@ import {AiFillHome} from 'react-icons/ai'
 import {AiFillCode} from 'react-icons/ai'
 import {AiFillDatabase} from 'react-icons/ai'
 import {AiOutlineDocker} from 'react-icons/ai'
-import { IoLogoFigma } from "react-icons/io5"
+import { IoGitBranchOutline } from "react-icons/io5";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiCsswizardry } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
@@ -175,10 +175,10 @@ return (
               <Icons icons=<AiOutlineDocker/>
                     text="Docker" 
               />
-              <Icons icons=<IoIosGitBranch/>
+              <Icons icons=<IoGitBranchOutline/>
                     text="Git" 
               />
-                <Icons icons=<IoLogoFigma/>
+                <Icons icons=<SiFigma/>
                     text="figma" 
               />
 
@@ -189,62 +189,66 @@ return (
 
         <Container id="skills" title="Compétence">
           <SkillTitle title="Language"/>
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<AiFillHtml5/>
+                text="HTML:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiCsswizardry />
+                text="CSS:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiJavascript/>
+                text="JS:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiTypescript/>
+                text="TS:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiPhp/>
+                text="PHP:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiMysql/>
+                text="MySQL:utilisé" 
+          />
+
+          <Icons icons=<SiArduino/>
+                 text="C++ Arduino:utilisé" 
           />
 
           <SkillTitle title="Framework"/>
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiLaravel/>
+                text="Laravel:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiSymfony/>
+                text="Symfony:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<RiReactjsLine />
+                text="ReactJS:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<RiAngularjsFill/>
+                text="Angular:vue" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiApachecordova/>
+                text="Cordova:vue" 
           />
-          <Icons icons="icons"
-                text="text" 
-          />
+
           <SkillTitle title="others"/>
-          <Icons icons="icons"
-                text="text" 
+
+          <Icons icons=<BsWordpress/>
+                text="Wordpress" 
           />
-          <Icons icons="icons"
-                text="text" 
+
+          <Icons icons=<AiOutlineDocker/>
+                text="Docker/Lando:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<AiFillGithub/>
+                text="Github:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<AiOutlineLinux/>
+                text="Linux:utilsié" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<VscVscodeInsiders/>
+                text="Vscode:utilisé" 
           />
-          <Icons icons="icons"
-                text="text" 
+          <Icons icons=<SiPhpstorm/>
+                text="PhpStorm:utilisé" 
           />
         </Container>
         
@@ -268,12 +272,14 @@ return (
         
         <Container  title="Portofolio"/>
     </section>
-  
-        <Container>
-          <Footer icons="telephone"/>
-          <Footer icons="mail"/>
-          <Footer icons="dl"/>
-        </Container>  
+
+    <section className="mt-3 mx-5 rounded-lg h-screen w-screen bg-[#9e826f]" >
+          <div>
+            <Footer icons=<BsFillPhoneFill/>/>
+            <Footer icons=<IoIosMail/>/>
+            <Footer icons=<IoMdDownload/>/>
+          </div>
+    </section>
   </main>
   );
 }
