@@ -153,13 +153,13 @@ return (
     <section>
       
         <Container id="About" title="A Propos">
-          <div className="flex ">
+          <div className="flex">
             <div className="border-solid  border-4 border-red-500 w-6/12">
                 <Avatar/>
                 <Links gitHub=<AiFillGithub/>
                       LinkeDin=<AiFillLinkedin className='rounded-xl'/>   
-                      Llinkedin= "https://www.youtube.com/results?search_query=jsx+tuto+"
-                      Lgit= "https://www.youtube.com/results?search_query=jsx+tuto+"    
+                      Llinkedin= "https://www.linkedin.com/in/dorian-soudan-000a6b1b5/"
+                      Lgit= "https://github.com/Linaria64?tab=repositories"    
                   />
               </div>
               <div className="border-solid  border-4 border-red-500 w-6/12">
