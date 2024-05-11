@@ -33,7 +33,7 @@ import { IoMdDownload } from "react-icons/io";
  */
 function Nav() {
   return (
-    <header>
+    <header className='border-4 border-purple-500'>
     <nav>
       <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold ">
         <li className="ml-auto "><a href=""><AiFillHome/></a></li>
@@ -54,8 +54,8 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <section className="mt-3 mx-5 rounded-lg h-screen w-screen bg-[#9e826f]">
-    <div className="border-transparent border ">
+  <section className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full  border-4 border-blue-900">
+    <div className="border-transparent border-4 border-yellow-400 ">
      <h1 className="text-center bg-[#c7bab4] w-6/12 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
    {children}
@@ -73,7 +73,7 @@ function Container({title,children}:any) {
   function Text({text}:any) {
 
     return (
-      <div className="rounded-lg bg-[#41434c] w-5/6 h-full mx-auto">
+      <div className="rounded-lg bg-[#41434c] m-auto w-4/6  h-4/6 border-4 border-purple-600">
         <p className="text-[#efe0fe]">{text}</p>
       </div>
     )
@@ -81,10 +81,10 @@ function Container({title,children}:any) {
 
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
-      <div className="rounded-lg bg-[#41434c] w-1/4">
-       <ul className="text-[#efe0fe]">
-          <li><a  href={Llinkedin}>{gitHub} gitHub</a></li>
-          <li><a href={Lgit}>{LinkeDin} Linkedin</a></li>
+      <div className="rounded-lg bg-[#41434c] w-3/6  mx-auto mb-5 border-4 border-neutral-900 ">
+       <ul className="text-[#efe0fe] ">
+          <li><a className='flex gap-2'  href={Llinkedin}>{gitHub} gitHub</a></li>
+          <li><a className='flex gap-2' href={Lgit}>{LinkeDin} Linkedin</a></li>
         </ul>
       </div>
     )
@@ -92,25 +92,21 @@ function Container({title,children}:any) {
 
   function Icons({icons,text}:any){
     return (
-      <div>
         <ul>
           <li>{icons}<p>{text}</p></li>
         </ul>
 
-      </div>
       )
   }
 
   function Avatar() {
     return (
-      <div>
-        <Image className='rounded-lg mx-5 my-5'
+        <Image className='rounded-lg mx-auto my-5 border-4 w-3/6 border-neutral-900'
           src="/image/Avatar.png"
           alt=" "
-          width={200}
-          height={200}
+          width={100}
+          height={100}
         />
-      </div>
     ) 
   }
 
@@ -148,13 +144,12 @@ function Footer({icons}:any) {
 export default function Site() {
 
 return (
-   <main className="w-full h-full bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3]">
+   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full border-4 border-purple-950">
     <Nav/>
     <section>
-      
-        <Container id="About" title="A Propos">
+        <Container id="About"   title="A Propos">
           <div className="flex">
-            <div className="border-solid  border-4 border-red-500 w-6/12">
+            <div className="w-2/6">
                 <Avatar/>
                 <Links gitHub=<AiFillGithub/>
                       LinkeDin=<AiFillLinkedin className='rounded-xl'/>   
@@ -162,9 +157,10 @@ return (
                       Lgit= "https://github.com/Linaria64?tab=repositories"    
                   />
               </div>
-              <div className="border-solid  border-4 border-red-500 w-6/12">
+
+              <div className="w-4/6 border-4 border-neutral-800">
               <Text text="lorem ipsum"/>
-              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-4 mt-5">
+              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-6 m-auto w-4/6 border-4 p-2 border-neutral-300">
               <Icons icons=<AiFillCode/>
                     text="Front-End" 
               />
@@ -273,7 +269,7 @@ return (
         <Container  title="Portofolio"/>
     </section>
 
-    <section className="mt-3 mx-5 rounded-lg h-screen w-screen bg-[#9e826f]" >
+    <section className="mt-3 mx-5 rounded-lg  bg-[#9e826f]" >
           <div>
             <Footer icons=<BsFillPhoneFill/>/>
             <Footer icons=<IoIosMail/>/>
