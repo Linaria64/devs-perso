@@ -34,14 +34,14 @@ import { IoMdDownload } from "react-icons/io";
 function Nav() {
   return (
     <header>
-    <nav>
+    <nav className='p-2 gap-4 mr-5'>
       <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold ">
-        <li className="ml-auto "><a href=""><AiFillHome/></a></li>
+        <li className="ml-auto p-1"><a  href="#"><AiFillHome className=''/></a></li>
         <li><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
         <li><a href="#works">Parcours</a></li>
-        <li><a href="#">Portofolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ol>
     </nav>
 </header>
@@ -56,7 +56,7 @@ function Container({title,children}:any) {
   return (
   <section className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full">
     <div className="border-transparent border-4 ">
-     <h1 className="text-center bg-[#c7bab4] w-6/12 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
+     <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
    {children}
    </section>
@@ -104,8 +104,8 @@ function Container({title,children}:any) {
         <Image className='rounded-lg mx-auto my-5 w-3/6'
           src="/image/Avatar.png"
           alt=" "
-          width={100}
-          height={100}
+          width={300}
+          height={300}
           priority
         />
     ) 
@@ -152,8 +152,8 @@ return (
           <div className="flex">
             <div className="w-2/6">
                 <Avatar/>
-                <Links gitHub=<AiFillGithub/>
-                      LinkeDin=<AiFillLinkedin className='rounded-xl'/>   
+                <Links gitHub=<AiFillGithub className='w-7 h-7'/>
+                      LinkeDin=<AiFillLinkedin className='rounded-xl w-7 h-7'/>   
                       Llinkedin= "https://www.linkedin.com/in/dorian-soudan-000a6b1b5/"
                       Lgit= "https://github.com/Linaria64?tab=repositories"    
                   />
@@ -161,21 +161,21 @@ return (
 
               <div className="w-4/6">
               <Text text="lorem ipsum"/>
-              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-6  mx-auto w-5/6 h-2/6 ">
-              <Icons icons=<AiFillCode/>
+              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-x-16  mx-auto w-5/6 h-2/6 ">
+              <Icons icons=<AiFillCode className='w-14 h-14'/>
                     text="Front-End" 
               />
-              <Icons icons=<AiFillDatabase/>
+              <Icons icons=<AiFillDatabase className='w-14 h-14'/>
                     text="Back-end" 
               />
               
-              <Icons icons=<AiOutlineDocker/>
+              <Icons icons=<AiOutlineDocker className='w-14 h-14'/>
                     text="Docker" 
               />
-              <Icons icons=<IoGitBranchOutline/>
+              <Icons icons=<IoGitBranchOutline className='w-14 h-14'/>
                     text="Git" 
               />
-                <Icons icons=<SiFigma/>
+                <Icons icons=<SiFigma className='w-14 h-14'/>
                     text="figma" 
               />
 
