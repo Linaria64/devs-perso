@@ -7,7 +7,26 @@ import {AiFillCode} from 'react-icons/ai'
 import {AiFillDatabase} from 'react-icons/ai'
 import {AiOutlineDocker} from 'react-icons/ai'
 import { IoLogoFigma } from "react-icons/io5"
-import { IoIosGitBranch } from "react-icons/io";
+import { AiFillHtml5 } from "react-icons/ai";
+import { SiCsswizardry } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiPhp } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiArduino } from "react-icons/si";
+import { SiLaravel } from "react-icons/si";
+import { SiSymfony } from "react-icons/si";
+import { RiReactjsLine } from "react-icons/ri";
+import { RiAngularjsFill } from "react-icons/ri";
+import { SiApachecordova } from "react-icons/si";
+import { BsWordpress } from "react-icons/bs";
+import { AiOutlineLinux } from "react-icons/ai";
+import { VscVscodeInsiders } from "react-icons/vsc";
+import { SiPhpstorm } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
+import { BsFillPhoneFill } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
+import { IoMdDownload } from "react-icons/io";
 /**
  * Menu de navigation
  * @returns NavJSX
@@ -16,8 +35,8 @@ function Nav() {
   return (
     <header>
     <nav>
-      <ol className="flex gap-2 text-[#7a9fd7]/[07] ">
-        <li className="ml-auto"><a href=""><AiFillHome/></a></li>
+      <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold ">
+        <li className="ml-auto "><a href=""><AiFillHome/></a></li>
         <li><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
         <li><a href="#works">Parcours</a></li>
@@ -35,7 +54,7 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <section className="mt-3 mx-5 rounded-lg  bg-[#9e826f]">
+  <section className="mt-3 mx-5 rounded-lg h-screen w-screen bg-[#9e826f]">
     <div className="border-transparent border ">
      <h1 className="text-center bg-[#c7bab4] w-6/12 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
@@ -54,7 +73,7 @@ function Container({title,children}:any) {
   function Text({text}:any) {
 
     return (
-      <div className="rounded-lg bg-[#41434c] w-1/4 mx-auto">
+      <div className="rounded-lg bg-[#41434c] w-5/6 h-full mx-auto">
         <p className="text-[#efe0fe]">{text}</p>
       </div>
     )
@@ -134,7 +153,7 @@ return (
     <section>
       
         <Container id="About" title="A Propos">
-          <div className="flex">
+          <div className="flex ">
             <div className="border-solid  border-4 border-red-500 w-6/12">
                 <Avatar/>
                 <Links gitHub=<AiFillGithub/>
@@ -145,7 +164,7 @@ return (
               </div>
               <div className="border-solid  border-4 border-red-500 w-6/12">
               <Text text="lorem ipsum"/>
-              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-4">
+              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-4 mt-5">
               <Icons icons=<AiFillCode/>
                     text="Front-End" 
               />
