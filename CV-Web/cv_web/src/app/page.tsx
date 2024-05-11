@@ -99,6 +99,33 @@ function Container({title,children}:any) {
       )
   }
 
+  /**
+   * Fonction qui retourne des icones pour la section skill
+   * @returns Icones
+   */
+
+function IconsSkils({icons}:any) {
+  return (
+    <ul className='p-1'>
+      <li className='flex flex-col gap-2'>{icons}</li>
+    </ul>
+  )
+}
+
+  /**
+   * Fonction qui retourne une chaines de caractères pour la section skill
+   * @returns Une chaine de caractère
+   */
+
+  function TextSkils({text}:any) {
+    return (
+      <div className='p-1'>
+        <p className='flex flex-col gap-2'>{text}</p>
+      </div>
+    )
+  }
+  
+  
   function Avatar() {
     return (
         <Image className='rounded-lg mx-auto my-5 w-3/6'
@@ -141,6 +168,16 @@ function Footer({icons}:any) {
  * Function all in one
  * Call all JSX Element
  * @returns all jsx element
+ */
+
+
+
+/**
+ * TODO NETTOYER LE CODE DE LA SECTION A PROPOS
+ * TODO DIMENSIONNER COMME IL FAUT LES ICONES DE LA SECTION COMPETENCE ET DE LA SECTION A PROPOS
+ * TODO METTRE EN ITALIQUE LE TEXT LIEN GITHUB ET LIEN LINKEDIN 
+ * TODO COMMENCER LA SECTION PARCOURS
+ * @returns 
  */
 export default function Site() {
 return (
