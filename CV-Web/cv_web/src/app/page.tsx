@@ -54,12 +54,12 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <section className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full">
+  <div className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full border-4  border-red-600">
     <div className="border-transparent border-4 ">
      <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
    {children}
-   </section>
+   </div>
 )
 }
 
@@ -143,111 +143,125 @@ function Footer({icons}:any) {
  * @returns all jsx element
  */
 export default function Site() {
-
 return (
-   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full ">
-    <Nav/>
-    <section>
-        <Container id="About"   title="A Propos">
-          <div className="flex">
-            <div className="w-2/6">
-                <Avatar/>
-                <Links gitHub=<AiFillGithub className='w-7 h-7'/>
+  <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full ">
+      <Nav/>
+      <section id="About">
+          <Container   title="A Propos">
+              <div  className="flex">
+                <div className="w-2/6">
+                  <Avatar/>
+                  <Links gitHub=<AiFillGithub className='w-7 h-7'/>
                       LinkeDin=<AiFillLinkedin className='rounded-xl w-7 h-7'/>   
                       Llinkedin= "https://www.linkedin.com/in/dorian-soudan-000a6b1b5/"
                       Lgit= "https://github.com/Linaria64?tab=repositories"    
-                  />
-              </div>
+                      />
+                </div>
 
-              <div className="w-4/6">
-              <Text text="lorem ipsum"/>
-              <div  className="rounded-lg bg-[#41434c] flex flex-row gap-x-16  mx-auto w-5/6 h-2/6 ">
-              <Icons icons=<AiFillCode className='w-14 h-14'/>
+               <div className="w-4/6">
+                <Text text="lorem ipsum"/>
+                <div  className="rounded-lg bg-[#41434c] flex flex-row gap-x-16  mx-auto w-5/6 h-2/6 ">
+                  <Icons icons=<AiFillCode className='w-14 h-14'/>
                     text="Front-End" 
-              />
-              <Icons icons=<AiFillDatabase className='w-14 h-14'/>
+                  />
+                  <Icons icons=<AiFillDatabase className='w-14 h-14'/>
                     text="Back-end" 
-              />
-              
-              <Icons icons=<AiOutlineDocker className='w-14 h-14'/>
+                  />
+                  <Icons icons=<AiOutlineDocker className='w-14 h-14'/>
                     text="Docker" 
-              />
-              <Icons icons=<IoGitBranchOutline className='w-14 h-14'/>
+                  />
+                  <Icons icons=<IoGitBranchOutline className='w-14 h-14'/>
                     text="Git" 
-              />
-                <Icons icons=<SiFigma className='w-14 h-14'/>
+                  />
+                  <Icons icons=<SiFigma className='w-14 h-14'/>
                     text="figma" 
-              />
-
+                  />
+                </div>
+               </div>
               </div>
-              </div>
-          </div>
-        </Container>
+          </Container>
 
-        <Container id="skills" title="Compétence">
+      <section id="skills">
+        <Container  title="Compétence">      
           <SkillTitle title="Language"/>
           <Icons icons=<AiFillHtml5/>
-                text="HTML:utilisé" 
+            text="HTML:utilisé"
           />
           <Icons icons=<SiCsswizardry />
-                text="CSS:utilisé" 
+            text="CSS:utilisé" 
           />
           <Icons icons=<SiJavascript/>
-                text="JS:utilisé" 
+            text="JS:utilisé" 
           />
           <Icons icons=<SiTypescript/>
-                text="TS:utilisé" 
+            text="TS:utilisé" 
           />
           <Icons icons=<SiPhp/>
-                text="PHP:utilisé" 
+            text="PHP:utilisé" 
           />
           <Icons icons=<SiMysql/>
-                text="MySQL:utilisé" 
+            text="MySQL:utilisé" 
           />
-
           <Icons icons=<SiArduino/>
-                 text="C++ Arduino:utilisé" 
+            text="C++ Arduino:utilisé" 
           />
-
+          
           <SkillTitle title="Framework"/>
           <Icons icons=<SiLaravel/>
-                text="Laravel:utilisé" 
+            text="Laravel:utilisé" 
           />
           <Icons icons=<SiSymfony/>
-                text="Symfony:utilisé" 
+            text="Symfony:utilisé" 
           />
           <Icons icons=<RiReactjsLine />
-                text="ReactJS:utilisé" 
+            text="ReactJS:utilisé" 
           />
           <Icons icons=<RiAngularjsFill/>
-                text="Angular:vue" 
+            text="Angular:vue" 
           />
           <Icons icons=<SiApachecordova/>
-                text="Cordova:vue" 
+            text="Cordova:vue" 
           />
 
           <SkillTitle title="others"/>
-
           <Icons icons=<BsWordpress/>
-                text="Wordpress" 
+            text="Wordpress" 
           />
-
           <Icons icons=<AiOutlineDocker/>
-                text="Docker/Lando:utilisé" 
+            text="Docker/Lando:utilisé" 
           />
           <Icons icons=<AiFillGithub/>
-                text="Github:utilisé" 
+            text="Github:utilisé" 
           />
           <Icons icons=<AiOutlineLinux/>
-                text="Linux:utilsié" 
+            text="Linux:utilsié" 
           />
           <Icons icons=<VscVscodeInsiders/>
-                text="Vscode:utilisé" 
+            text="Vscode:utilisé" 
           />
           <Icons icons=<SiPhpstorm/>
-                text="PhpStorm:utilisé" 
-          />
+            text="PhpStorm:utilisé" 
+          />         
         </Container>
+      </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         <Container id="works" title="Parcours">
           <ContainerWorks className="bg-gray-400">
