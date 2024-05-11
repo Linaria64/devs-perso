@@ -54,7 +54,7 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <div className="mt-3  rounded-lg  bg-[#9e826f] h-full w-full border-4  border-red-600">
+  <div className=" mt-3  rounded-lg  bg-[#9e826f] h-full w-full border-4  border-red-600">
     <div className="border-transparent border-4 ">
      <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
@@ -67,7 +67,7 @@ function Container({title,children}:any) {
    * Enfant JSX ( Avatar, Text, Réseaux, etc...)
    * @returns Enfant JSX
    * Text : Retourne une chaine de caractère
-   * Links : Retourne 2 Liens
+   * Links : Retourne 2 Liens 
    */
 
   function Text({text}:any) {
@@ -147,7 +147,8 @@ return (
   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full ">
       <Nav/>
       <section id="About">
-          <Container   title="A Propos">
+        <section>
+        <Container   title="A Propos">
               <div  className="flex">
                 <div className="w-2/6">
                   <Avatar/>
@@ -181,69 +182,79 @@ return (
               </div>
           </Container>
 
-      <section id="skills">
-        <Container  title="Compétence">      
-          <SkillTitle title="Language"/>
-          <Icons icons=<AiFillHtml5/>
-            text="HTML:utilisé"
-          />
-          <Icons icons=<SiCsswizardry />
-            text="CSS:utilisé" 
-          />
-          <Icons icons=<SiJavascript/>
-            text="JS:utilisé" 
-          />
-          <Icons icons=<SiTypescript/>
-            text="TS:utilisé" 
-          />
-          <Icons icons=<SiPhp/>
-            text="PHP:utilisé" 
-          />
-          <Icons icons=<SiMysql/>
-            text="MySQL:utilisé" 
-          />
-          <Icons icons=<SiArduino/>
-            text="C++ Arduino:utilisé" 
-          />
-          
-          <SkillTitle title="Framework"/>
-          <Icons icons=<SiLaravel/>
-            text="Laravel:utilisé" 
-          />
-          <Icons icons=<SiSymfony/>
-            text="Symfony:utilisé" 
-          />
-          <Icons icons=<RiReactjsLine />
-            text="ReactJS:utilisé" 
-          />
-          <Icons icons=<RiAngularjsFill/>
-            text="Angular:vue" 
-          />
-          <Icons icons=<SiApachecordova/>
-            text="Cordova:vue" 
-          />
+        </section>
 
-          <SkillTitle title="others"/>
-          <Icons icons=<BsWordpress/>
-            text="Wordpress" 
-          />
-          <Icons icons=<AiOutlineDocker/>
-            text="Docker/Lando:utilisé" 
-          />
-          <Icons icons=<AiFillGithub/>
-            text="Github:utilisé" 
-          />
-          <Icons icons=<AiOutlineLinux/>
-            text="Linux:utilsié" 
-          />
-          <Icons icons=<VscVscodeInsiders/>
-            text="Vscode:utilisé" 
-          />
-          <Icons icons=<SiPhpstorm/>
-            text="PhpStorm:utilisé" 
-          />         
+      <section id="skills" className='border-4 border-neutral-950 '>
+        <Container  title="Compétence">
+          <section className='flex gap-5'>
+          <div className=' border-4 border-purple-800 w-2/6 '>
+            <SkillTitle title="Language"/>
+              <Icons icons=<AiFillHtml5/>
+                text="HTML:utilisé"
+              />
+              <Icons icons=<SiCsswizardry />
+                text="CSS:utilisé" 
+              />
+              <Icons icons=<SiJavascript/>
+                text="JS:utilisé" 
+              />
+              <Icons icons=<SiTypescript/>
+                text="TS:utilisé" 
+              />
+              <Icons icons=<SiPhp/>
+                text="PHP:utilisé" 
+              />
+              <Icons icons=<SiMysql/>
+                text="MySQL:utilisé" 
+              />
+              <Icons icons=<SiArduino/>
+                text="C++ Arduino:utilisé" 
+              />
+          </div> 
+
+          <div className='border-4 border-neutral-800 w-2/6'>
+            <SkillTitle title="Framework"/>
+            <Icons icons=<SiLaravel/>
+              text="Laravel:utilisé" 
+            />
+            <Icons icons=<SiSymfony/>
+              text="Symfony:utilisé" 
+            />
+            <Icons icons=<RiReactjsLine />
+              text="ReactJS:utilisé" 
+            />
+            <Icons icons=<RiAngularjsFill/>
+              text="Angular:vue" 
+            />
+            <Icons icons=<SiApachecordova/>
+              text="Cordova:vue" 
+            />
+          </div>
+
+          <div className='border-4 border-blue-400  w-2/6'>
+            <SkillTitle title="others"/>
+            <Icons icons=<BsWordpress/>
+              text="Wordpress" 
+            />
+            <Icons icons=<AiOutlineDocker/>
+              text="Docker/Lando:utilisé" 
+            />
+            <Icons icons=<AiFillGithub/>
+              text="Github:utilisé" 
+            />
+            <Icons icons=<AiOutlineLinux/>
+              text="Linux:utilsié" 
+            />
+            <Icons icons=<VscVscodeInsiders/>
+              text="Vscode:utilisé" 
+            />
+            <Icons icons=<SiPhpstorm/>
+              text="PhpStorm:utilisé" 
+            />         
+          </div>
+          </section>
         </Container>
-      </section>
+       </section>
         
 
 
@@ -262,7 +273,7 @@ return (
 
 
 
-        
+
         <Container id="works" title="Parcours">
           <ContainerWorks className="bg-gray-400">
             <SkillTitle title="un titre"/>
@@ -282,10 +293,9 @@ return (
         </Container>
         
         <Container  title="Portofolio"/>
-    </section>
 
-    <section className="mt-3 mx-5 rounded-lg  bg-[#9e826f]" >
-          <div>
+
+        <div className="mt-3 mx-5 rounded-lg  bg-[#9e826f]">
             <Footer icons=<BsFillPhoneFill/>/>
             <Footer icons=<IoIosMail/>/>
             <Footer icons=<IoMdDownload/>/>
