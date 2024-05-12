@@ -173,7 +173,6 @@ function Footer({icons}:any) {
 
 
 /**
- * TODO NETTOYER LE CODE DE LA SECTION A PROPOS
  * TODO DIMENSIONNER COMME IL FAUT LES ICONES DE LA SECTION COMPETENCE ET DE LA SECTION A PROPOS
  * TODO METTRE EN ITALIQUE LE TEXT LIEN GITHUB ET LIEN LINKEDIN 
  * TODO COMMENCER LA SECTION PARCOURS
@@ -198,6 +197,7 @@ return (
 
                <div className="w-4/6">
                 <Text text="lorem ipsum"/>
+
                 <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-4/6 h-2/6 ">
                   <Icons icons=<AiFillCode className='w-14 h-14'/>
                     text="Front-End" 
@@ -218,88 +218,80 @@ return (
                </div>
               </div>
           </Container>
-
         </section>
 
-      <section id="skills" className='border-4 border-neutral-950 '>
-        <Container  title="Compétence">
-          <section className='flex gap-5'>
-          <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-2 '>
-            <SkillTitle title="Language"/>
-              <Icons icons=<AiFillHtml5/>
-                text="HTML:utilisé"
-              />
-              <Icons icons=<SiCsswizardry />
-                text="CSS:utilisé" 
-              />
-              <Icons icons=<SiJavascript/>
-                text="JS:utilisé" 
-              />
-              <Icons icons=<SiTypescript/>
-                text="TS:utilisé" 
-              />
-              <Icons icons=<SiPhp/>
-                text="PHP:utilisé" 
-              />
-              <Icons icons=<SiMysql/>
-                text="MySQL:utilisé" 
-              />
-              <Icons icons=<SiArduino/>
-                text="C++ Arduino:utilisé" 
-              />
-          </div> 
+        <section id="skills" className='border-4 border-neutral-950 '>
+          <Container  title="Compétence">
+            <section className='flex gap-5'>
+            <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-2 '>
+              <SkillTitle title="Language"/>
+                <Icons icons=<AiFillHtml5/>
+                  text="HTML:utilisé"
+                />
+                <Icons icons=<SiCsswizardry />
+                  text="CSS:utilisé" 
+                />
+                <Icons icons=<SiJavascript/>
+                  text="JS:utilisé" 
+                />
+                <Icons icons=<SiTypescript/>
+                  text="TS:utilisé" 
+                />
+                <Icons icons=<SiPhp/>
+                  text="PHP:utilisé" 
+                />
+                <Icons icons=<SiMysql/>
+                  text="MySQL:utilisé" 
+                />
+                <Icons icons=<SiArduino/>
+                  text="C++ Arduino:utilisé" 
+                />
+            </div> 
 
-          <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-5'>
-            <SkillTitle title="Framework"/>
-            <Icons icons=<SiLaravel/>
-              text="Laravel:utilisé" 
-            />
-            <Icons icons=<SiSymfony/>
-              text="Symfony:utilisé" 
-            />
-            <Icons icons=<RiReactjsLine />
-              text="ReactJS:utilisé" 
-            />
-            <Icons icons=<RiAngularjsFill/>
-              text="Angular:vue" 
-            />
-            <Icons icons=<SiApachecordova/>
-              text="Cordova:vue" 
-            />
-          </div>
+            <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-5'>
+              <SkillTitle title="Framework"/>
+              <Icons icons=<SiLaravel/>
+                text="Laravel:utilisé" 
+              />
+              <Icons icons=<SiSymfony/>
+                text="Symfony:utilisé" 
+              />
+              <Icons icons=<RiReactjsLine />
+                text="ReactJS:utilisé" 
+              />
+              <Icons icons=<RiAngularjsFill/>
+                text="Angular:vue" 
+              />
+              <Icons icons=<SiApachecordova/>
+                text="Cordova:vue" 
+              />
+            </div>
 
-          <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-3'>
-            <SkillTitle title="others"/>
-            <Icons icons=<BsWordpress/>
-              text="Wordpress" 
-            />
-            <Icons icons=<AiOutlineDocker/>
-              text="Docker/Lando:utilisé" 
-            />
-            <Icons icons=<AiFillGithub/>
-              text="Github:utilisé" 
-            />
-            <Icons icons=<AiOutlineLinux/>
-              text="Linux:utilsié" 
-            />
-            <Icons icons=<VscVscodeInsiders/>
-              text="Vscode:utilisé" 
-            />
-            <Icons icons=<SiPhpstorm/>
-              text="PhpStorm:utilisé" 
-            />         
-          </div>
-          </section>
-        </Container>
-       </section>
+            <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-3'>
+              <SkillTitle title="others"/>
+              <Icons icons=<BsWordpress/>
+                text="Wordpress" 
+              />
+              <Icons icons=<AiOutlineDocker/>
+                text="Docker/Lando:utilisé" 
+              />
+              <Icons icons=<AiFillGithub/>
+                text="Github:utilisé" 
+              />
+              <Icons icons=<AiOutlineLinux/>
+                text="Linux:utilsié" 
+              />
+              <Icons icons=<VscVscodeInsiders/>
+                text="Vscode:utilisé" 
+              />
+              <Icons icons=<SiPhpstorm/>
+                text="PhpStorm:utilisé" 
+              />         
+            </div>
+            </section>
+          </Container>
+        </section>
         
-
-
-
-
-
-
-
 
 
 
