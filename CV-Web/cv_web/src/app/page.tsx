@@ -106,9 +106,11 @@ function Container({title,children}:any) {
 
 function IconsSkils({icons}:any) {
   return (
-    <ul className='p-1'>
-      <li className='flex flex-col gap-2'>{icons}</li>
-    </ul>
+    <div>
+      <ul className='p-1'>
+        <li>{icons}</li>
+      </ul>
+    </div>
   )
 }
 
@@ -139,7 +141,7 @@ function IconsSkils({icons}:any) {
   }
 
 function SkillTitle({title}:any) {
-  return <div className='mb-2 rounded-lg bg-[#41434c] p-1'><h2 className='text-center bg-[#9e826f] rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
+  return <div className='mb-2 rounded-lg bg-[#41434c] p-1'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
 }
 
 function ContainerWorks({children}:any) {
@@ -223,29 +225,31 @@ return (
         <section id="skills" className='border-4 border-neutral-950 '>
           <Container  title="Compétence">
             <section className='flex gap-5'>
-            <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-2 '>
+            <div className='w-2/6  rounded-lg  gap-2 '>
               <SkillTitle title="Language"/>
-                <Icons icons=<AiFillHtml5/>
-                  text="HTML:utilisé"
-                />
-                <Icons icons=<SiCsswizardry />
-                  text="CSS:utilisé" 
-                />
-                <Icons icons=<SiJavascript/>
-                  text="JS:utilisé" 
-                />
-                <Icons icons=<SiTypescript/>
-                  text="TS:utilisé" 
-                />
-                <Icons icons=<SiPhp/>
-                  text="PHP:utilisé" 
-                />
-                <Icons icons=<SiMysql/>
-                  text="MySQL:utilisé" 
-                />
-                <Icons icons=<SiArduino/>
-                  text="C++ Arduino:utilisé" 
-                />
+
+              <div className='flex gap-2'>
+                <section className='border-4 border-red-700 w-2/4 bg-[#41434c]'>
+                    <IconsSkils icons=<AiFillHtml5/>/>
+                                        <IconsSkils icons=<AiFillHtml5/>/>
+
+                                        <IconsSkils icons=<AiFillHtml5/>/>
+
+                                        <IconsSkils icons=<AiFillHtml5/>/>
+
+                                        <IconsSkils icons=<AiFillHtml5/>/>
+
+                                        <IconsSkils icons=<AiFillHtml5/>/>
+
+                                        <IconsSkils icons=<AiFillHtml5/>/>
+
+                  </section>
+
+                  <section className='border-4 border-blue-800 w-2/4 bg-[#41434c]'>
+                    <TextSkils text="HTML"/>
+                  </section>
+              </div>
+                
             </div> 
 
             <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-5'>
