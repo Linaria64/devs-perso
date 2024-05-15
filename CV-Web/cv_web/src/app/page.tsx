@@ -230,18 +230,18 @@ return (
 
               <div className='flex gap-2'>
                 <section className='border-4 border-red-700 w-2/4 bg-[#41434c]'>
-                    <IconsSkils icons=<AiFillHtml5/>/>
-                                        <IconsSkils icons=<AiFillHtml5/>/>
+                    <IconsSkils icons=<AiFillHtml5 className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                                        <IconsSkils icons=<SiCsswizardry className='w-14 h-14 rounded-lg'/>/>
 
-                                        <IconsSkils icons=<AiFillHtml5/>/>
+                                        <IconsSkils icons=<SiJavascript className=' rounded-lg w-14 h-14'/>/>
 
-                                        <IconsSkils icons=<AiFillHtml5/>/>
+                                        <IconsSkils icons=<SiTypescript className='w-14 h-14 rounded-lg'/>/>
 
-                                        <IconsSkils icons=<AiFillHtml5/>/>
+                                        <IconsSkils icons=<SiPhp className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
 
-                                        <IconsSkils icons=<AiFillHtml5/>/>
+                                        <IconsSkils icons=<SiMysql className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
 
-                                        <IconsSkils icons=<AiFillHtml5/>/>
+                                        <IconsSkils icons=<SiArduino className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
 
                   </section>
 
