@@ -228,7 +228,8 @@ return (
               <SkillTitle title="Language"/>
 
               <div className='flex gap-2 h-5/6'>
-                  <section className='border-4 border-red-700 w-2/4 bg-[#41434c] space-y-5'>
+                  <section className='rounded-lg space-x-10 w-2/4 bg-[#41434c] space-y-4'>
+                    <p></p>
                     <IconsSkils icons=<AiFillHtml5 className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                     <IconsSkils icons=<SiCsswizardry className='w-14 h-14 rounded-lg'/>/>
                     <IconsSkils icons=<SiJavascript className=' rounded-lg w-14 h-14'/>/>
@@ -238,14 +239,15 @@ return (
                     <IconsSkils icons=<SiArduino className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                   </section>
 
-                  <section className='border-4 border-blue-800 w-2/4 bg-[#41434c] space-y-5'>
-                    <TextSkils text="· Html: Utilisé"/>
-                    <TextSkils text="· Css: Utilisé"/>
-                    <TextSkils text="· JS: Utilisé"/>
-                    <TextSkils text="· TS: Utilisé"/>
-                    <TextSkils text="· PHP: Utilisé"/>
-                    <TextSkils text="· MYSQL: Utilisé"/>
-                    <TextSkils text="· ARDUINO: Utilisé"/>
+                  <section className='rounded-lg w-2/4 bg-[#41434c] space-y-4'>
+                    <p></p>
+                    <TextSkils text="· Html: Utiliser"/>
+                    <TextSkils text="· Css: Utiliser"/>
+                    <TextSkils text="· JS: Utiliser"/>
+                    <TextSkils text="· TS: Utiliser"/>
+                    <TextSkils text="· PHP: Utiliser"/>
+                    <TextSkils text="· MYSQL: Utiliser"/>
+                    <TextSkils text="· ARDUINO: Utiliser"/>
                   </section>
               </div>
             </div> 
@@ -254,7 +256,8 @@ return (
               <SkillTitle title="Language"/>
 
               <div className='flex gap-2 h-5/6'>
-                  <section className='border-4 border-red-700 w-2/4 bg-[#41434c] space-y-14'>
+                  <section className='rounded-lg space-x-10 w-2/4 bg-[#41434c] space-y-10'>
+                    <p></p>
                     <IconsSkils icons=<SiLaravel className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                     <IconsSkils icons=<SiSymfony className='w-14 h-14 rounded-lg'/>/>
                     <IconsSkils icons=<RiReactjsLine className=' rounded-lg w-14 h-14 fill-[#41434c] bg-neutral-50'/>/>
@@ -262,10 +265,11 @@ return (
                     <IconsSkils icons=<SiApachecordova className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                   </section>
 
-                  <section className='border-4 border-blue-800 w-2/4 bg-[#41434c] space-y-14'>
-                    <TextSkils text="· Laravel: Utilisé"/>
-                    <TextSkils text="· Symfony: Utilisé"/>
-                    <TextSkils text="· ReactJS: Utilisé"/>
+                  <section className='rounded-lg w-2/4 bg-[#41434c] space-y-10'>
+                    <p></p>
+                    <TextSkils text="· Laravel: Utiliser"/>
+                    <TextSkils text="· Symfony: Utiliser"/>
+                    <TextSkils text="· ReactJS: Utiliser"/>
                     <TextSkils text="· Angular: Vue"/>
                     <TextSkils text="· Cordova: Vue"/>
                   </section>
@@ -277,7 +281,8 @@ return (
               <SkillTitle title="Language"/>
 
               <div className='flex gap-2 h-5/6'>
-                  <section className='border-4 border-red-700 w-2/4 bg-[#41434c] space-y-2'>
+                  <section className='rounded-lg space-x-10 w-2/4 bg-[#41434c] space-y-2'>
+                    <p></p>
                     <IconsSkils icons=<BsWordpress className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                     <IconsSkils icons=<AiOutlineDocker className='w-14 h-14 rounded-lg fill-[#41434c] bg-neutral-50 '/>/>
                     <IconsSkils icons=<IoGitBranchOutline  className=' rounded-lg w-14 h-14 '/>/>
@@ -288,14 +293,15 @@ return (
                     <IconsSkils icons=<SiFigma className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                   </section>
 
-                  <section className='border-4 border-blue-800 w-2/4 bg-[#41434c]'>
-                    <TextSkils text=""/>
-                    <TextSkils text=""/>
-                    <TextSkils text=""/>
-                    <TextSkils text=""/>
-                    <TextSkils text=""/>
-                    <TextSkils text=""/>
-                    <TextSkils text=""/>
+                  <section className='rounded-lg w-2/4 bg-[#41434c] space-y-3'>
+                    <p></p>
+                    <TextSkils text="· Wordpress: Utiliser"/>
+                    <TextSkils text="· Docker/Lando: Utiliser"/>
+                    <TextSkils text="· Git: Utiliser"/>
+                    <TextSkils text="· GitHub/GitLab: Utiliser"/>
+                    <TextSkils text="· VsCode: Utiliser"/>
+                    <TextSkils text="· PhpStorm: Utiliser"/>
+                    <TextSkils text="· Figma: Utiliser"/>
                   </section>
               </div>
             </div> 
