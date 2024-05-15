@@ -54,7 +54,7 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <div className=" mt-3  rounded-lg  bg-[#9e826f] h-full w-full border-4  border-red-600">
+  <div className=" mt-3  rounded-lg  bg-[#9e826f] h-screen w-full border-4  border-red-600">
     <div className="border-transparent border-4 ">
      <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
@@ -175,7 +175,6 @@ function Footer({icons}:any) {
 
 
 /**
- * TODO DIMENSIONNER COMME IL FAUT LES ICONES DE LA SECTION COMPETENCE ET DE LA SECTION A PROPOS
  * TODO METTRE EN ITALIQUE LE TEXT LIEN GITHUB ET LIEN LINKEDIN 
  * TODO COMMENCER LA SECTION PARCOURS
  * @returns 
@@ -224,80 +223,83 @@ return (
 
         <section id="skills" className='border-4 border-neutral-950 '>
           <Container  title="Compétence">
-            <section className='flex gap-5'>
+            <section className='flex gap-5  h-full'>
             <div className='w-2/6  rounded-lg  gap-2 '>
               <SkillTitle title="Language"/>
 
-              <div className='flex gap-2'>
-                <section className='border-4 border-red-700 w-2/4 bg-[#41434c]'>
+              <div className='flex gap-2 h-5/6'>
+                  <section className='border-4 border-red-700 w-2/4 bg-[#41434c] space-y-5'>
                     <IconsSkils icons=<AiFillHtml5 className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
-                                        <IconsSkils icons=<SiCsswizardry className='w-14 h-14 rounded-lg'/>/>
+                    <IconsSkils icons=<SiCsswizardry className='w-14 h-14 rounded-lg'/>/>
+                    <IconsSkils icons=<SiJavascript className=' rounded-lg w-14 h-14'/>/>
+                    <IconsSkils icons=<SiTypescript className='w-14 h-14 rounded-lg'/>/>
+                    <IconsSkils icons=<SiPhp className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<SiMysql className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<SiArduino className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                  </section>
 
-                                        <IconsSkils icons=<SiJavascript className=' rounded-lg w-14 h-14'/>/>
+                  <section className='border-4 border-blue-800 w-2/4 bg-[#41434c] space-y-5'>
+                    <TextSkils text="· Html: Utilisé"/>
+                    <TextSkils text="· Css: Utilisé"/>
+                    <TextSkils text="· JS: Utilisé"/>
+                    <TextSkils text="· TS: Utilisé"/>
+                    <TextSkils text="· PHP: Utilisé"/>
+                    <TextSkils text="· MYSQL: Utilisé"/>
+                    <TextSkils text="· ARDUINO: Utilisé"/>
+                  </section>
+              </div>
+            </div> 
 
-                                        <IconsSkils icons=<SiTypescript className='w-14 h-14 rounded-lg'/>/>
+            <div className='w-2/6  rounded-lg  gap-2 '>
+              <SkillTitle title="Language"/>
 
-                                        <IconsSkils icons=<SiPhp className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+              <div className='flex gap-2 h-5/6'>
+                  <section className='border-4 border-red-700 w-2/4 bg-[#41434c] space-y-14'>
+                    <IconsSkils icons=<SiLaravel className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<SiSymfony className='w-14 h-14 rounded-lg'/>/>
+                    <IconsSkils icons=<RiReactjsLine className=' rounded-lg w-14 h-14 fill-[#41434c] bg-neutral-50'/>/>
+                    <IconsSkils icons=<RiAngularjsFill className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<SiApachecordova className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                  </section>
 
-                                        <IconsSkils icons=<SiMysql className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                  <section className='border-4 border-blue-800 w-2/4 bg-[#41434c] space-y-14'>
+                    <TextSkils text="· Laravel: Utilisé"/>
+                    <TextSkils text="· Symfony: Utilisé"/>
+                    <TextSkils text="· ReactJS: Utilisé"/>
+                    <TextSkils text="· Angular: Vue"/>
+                    <TextSkils text="· Cordova: Vue"/>
+                  </section>
+              </div>
+            </div> 
 
-                                        <IconsSkils icons=<SiArduino className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
 
+            <div className='w-2/6  rounded-lg  gap-2 '>
+              <SkillTitle title="Language"/>
+
+              <div className='flex gap-2 h-5/6'>
+                  <section className='border-4 border-red-700 w-2/4 bg-[#41434c] space-y-2'>
+                    <IconsSkils icons=<BsWordpress className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<AiOutlineDocker className='w-14 h-14 rounded-lg fill-[#41434c] bg-neutral-50 '/>/>
+                    <IconsSkils icons=<IoGitBranchOutline  className=' rounded-lg w-14 h-14 '/>/>
+                    <IconsSkils icons=<AiFillGithub className='w-14 h-14 rounded-lg fill-[#41434c] bg-neutral-50 '/>/>
+                    <IconsSkils icons=<AiOutlineLinux className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<VscVscodeInsiders className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<SiPhpstorm className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
+                    <IconsSkils icons=<SiFigma className='w-14 h-14 fill-[#41434c] bg-neutral-50 rounded-lg'/>/>
                   </section>
 
                   <section className='border-4 border-blue-800 w-2/4 bg-[#41434c]'>
-                    <TextSkils text="HTML:utilisé"/>
-                    <TextSkils text="CSS:utilisé"/>
-                    <TextSkils text="JS:utilisé"/>
-                    <TextSkils text="TS:utilisé"/>
-                    <TextSkils text="PHP:utilisé"/>
-                    <TextSkils text="MYSQL:utilisé"/>
-                    <TextSkils text="ARDUINO:utilisé"/>
+                    <TextSkils text=""/>
+                    <TextSkils text=""/>
+                    <TextSkils text=""/>
+                    <TextSkils text=""/>
+                    <TextSkils text=""/>
+                    <TextSkils text=""/>
+                    <TextSkils text=""/>
                   </section>
               </div>
-                
             </div> 
 
-            <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-5'>
-              <SkillTitle title="Framework"/>
-              <Icons icons=<SiLaravel/>
-                text="Laravel:utilisé" 
-              />
-              <Icons icons=<SiSymfony/>
-                text="Symfony:utilisé" 
-              />
-              <Icons icons=<RiReactjsLine />
-                text="ReactJS:utilisé" 
-              />
-              <Icons icons=<RiAngularjsFill/>
-                text="Angular:vue" 
-              />
-              <Icons icons=<SiApachecordova/>
-                text="Cordova:vue" 
-              />
-            </div>
-
-            <div className='w-2/6  rounded-lg bg-[#41434c] flex flex-col gap-3'>
-              <SkillTitle title="others"/>
-              <Icons icons=<BsWordpress/>
-                text="Wordpress" 
-              />
-              <Icons icons=<AiOutlineDocker/>
-                text="Docker/Lando:utilisé" 
-              />
-              <Icons icons=<AiFillGithub/>
-                text="Github:utilisé" 
-              />
-              <Icons icons=<AiOutlineLinux/>
-                text="Linux:utilsié" 
-              />
-              <Icons icons=<VscVscodeInsiders/>
-                text="Vscode:utilisé" 
-              />
-              <Icons icons=<SiPhpstorm/>
-                text="PhpStorm:utilisé" 
-              />         
-            </div>
             </section>
           </Container>
         </section>
