@@ -121,8 +121,8 @@ function IconsSkils({icons}:any) {
 
   function TextSkils({text}:any) {
     return (
-      <div className='p-1'>
-        <p className='flex flex-col gap-2'>{text}</p>
+      <div className='p-5'>
+        <p className=''>{text}</p>
       </div>
     )
   }
@@ -246,7 +246,13 @@ return (
                   </section>
 
                   <section className='border-4 border-blue-800 w-2/4 bg-[#41434c]'>
-                    <TextSkils text="HTML"/>
+                    <TextSkils text="HTML:utilisé"/>
+                    <TextSkils text="CSS:utilisé"/>
+                    <TextSkils text="JS:utilisé"/>
+                    <TextSkils text="TS:utilisé"/>
+                    <TextSkils text="PHP:utilisé"/>
+                    <TextSkils text="MYSQL:utilisé"/>
+                    <TextSkils text="ARDUINO:utilisé"/>
                   </section>
               </div>
                 
