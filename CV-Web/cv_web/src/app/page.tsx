@@ -183,8 +183,8 @@ function ContainerWorks({children}:any) {
  */
 function Footer({icons}:any) {
   return (
-    <footer className="">
-    <div className="bg-[#41434c] w-1/4 rounded-lg m-auto">
+    <footer className="mx-auto">
+    <div className="bg-[#41434c] p-5 rounded-lg border-4 border-purple-700">
 <a href="">{icons}</a>  
   </div>
     </footer>
@@ -357,10 +357,10 @@ return (
         <Container  title="Portofolio"/>
  */}
 
-        <div className="mt-3 mx-5 rounded-lg  bg-[#9e826f]">
-            <Footer icons=<BsFillPhoneFill/>/>
-            <Footer icons=<IoIosMail/>/>
-            <Footer icons=<IoMdDownload/>/>
+        <div className="mt-3 mx-5 gap-5 rounded-lg flex p-3 border-4 border-slate-900 bg-[#9e826f]">
+            <Footer icons=<BsFillPhoneFill className='w-6 h-6 fill-[#9e826f]'/>/>
+            <Footer icons=<IoIosMail className='w-6 h-6 fill-[#9e826f]'/>/>
+            <Footer icons=<IoMdDownload className='w-6 h-6 fill-[#9e826f]'/>/>
           </div>
     </section>
   </main>
