@@ -140,10 +140,35 @@ function IconsSkils({icons}:any) {
     ) 
   }
 
-function SkillTitle({title}:any) {
-  return <div className='mb-2 rounded-lg bg-[#41434c] p-1'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
-}
+  function SkillTitle({title}:any) {
+    return <div className='mb-2 rounded-lg bg-[#41434c] p-1'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
+  }
+  function WorkTitleL({title}:any) {
+    return <div className='p-3 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 mr-auto mb-3'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
+  }
 
+  function WorkTitleR({title}:any) {
+    return <div className='p-3 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 ml-auto mb-3'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
+  }
+
+
+  function TextWorkL({text}:any) {
+    return (
+      <div className='p-5 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 mr-auto'>
+        <p className=''>{text}</p>
+      </div>
+    )
+  }
+  function TextWorkR({text}:any) {
+    return (
+      <div className='p-5 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 ml-auto'>
+        <p className=''>{text}</p>
+      </div>
+    )
+  }
+
+
+    
 function ContainerWorks({children}:any) {
   return (
   <div className="">{children}</div>
@@ -196,7 +221,7 @@ return (
                       />
                 </div>
 
-               <div className="w-4/6">
+               <div className="w-full">
                 <Text text="lorem ipsum"/>
 
                 <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-4/6 h-2/6 ">
@@ -310,33 +335,21 @@ return (
           </Container>
         </section>
         
-
-
-
-
-
-
-
-
-
-
-
-
         <Container id="works" title="Parcours">
           <ContainerWorks className="bg-gray-400">
-            <SkillTitle title="un titre"/>
-            <Text text="un text"/>
+            <WorkTitleL title="un titre"/>
+            <TextWorkL text="un text"/>
           </ContainerWorks>
 
           <ContainerWorks className="bg-gray-400">
-            <SkillTitle title="un titre"/>
-            <Text text="un text"/>
+            <WorkTitleR title="un titre"/>
+            <TextWorkR text="un text"/>
           </ContainerWorks>
 
 
           <ContainerWorks className="bg-gray-400">
-            <SkillTitle title="un titre"/>
-            <Text text="un text"/>
+            <WorkTitleL title="un titre"/>
+            <TextWorkL text="un text"/>
           </ContainerWorks>
         </Container>
         {/**
