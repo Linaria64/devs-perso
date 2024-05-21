@@ -83,8 +83,8 @@ function Container({title,children}:any) {
     return (
       <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5">
        <ul className="text-[#efe0fe] ">
-          <li><a className='flex gap-2'  href={Llinkedin}>{gitHub} gitHub</a></li>
-          <li><a className='flex gap-2' href={Lgit}>{LinkeDin} Linkedin</a></li>
+          <li><a className='flex gap-2 italic'  href={Llinkedin}>{gitHub} gitHub</a></li>
+          <li><a className='flex gap-2 italic' href={Lgit}>{LinkeDin} Linkedin</a></li>
         </ul>
       </div>
     )
@@ -200,8 +200,10 @@ function Footer({icons}:any) {
 
 
 /**
- * TODO METTRE EN ITALIQUE LE TEXT LIEN GITHUB ET LIEN LINKEDIN 
- * TODO COMMENCER LA SECTION PARCOURS
+ * TODO faire en sorte que le menu nav soit toujours en haut de l'écran
+ * TODO Mettre a la bonne taille les éléments de la sectionn a propos
+ * TODO Faire en sorte que les Boutons du footer link sur les bonnes chose
+ * TODO Commencer le responsive
  * @returns 
  */
 export default function Site() {
