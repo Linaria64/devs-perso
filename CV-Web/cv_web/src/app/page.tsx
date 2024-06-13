@@ -54,7 +54,7 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <div className=" mt-3  rounded-lg  bg-[#9e826f] h-screen w-full border-4  border-red-600">
+  <div className=" mt-3  rounded-lg  bg-[#9e826f] h-screen w-full">
     <div className="border-transparent border-4 ">
      <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
@@ -81,7 +81,7 @@ function Container({title,children}:any) {
 
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
-      <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5">
+      <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5 border-4 border-purple-600">
        <ul className="text-[#efe0fe] ">
           <li><a className='flex gap-2 italic'  href={Llinkedin}>{gitHub} gitHub</a></li>
           <li><a className='flex gap-2 italic' href={Lgit}>{LinkeDin} Linkedin</a></li>
@@ -130,7 +130,7 @@ function IconsSkils({icons}:any) {
   
   function Avatar() {
     return (
-        <Image className='rounded-lg mx-auto my-5 w-3/6'
+        <Image className='rounded-lg mx-auto my-5 w-3/6 border-4 border-neutral-800'
           src="/image/Avatar.png"
           alt=" "
           width={300}
@@ -184,7 +184,7 @@ function ContainerWorks({children}:any) {
 function Footer({icons}:any) {
   return (
     <footer className="mx-auto">
-    <div className="bg-[#41434c] p-5 rounded-lg border-4 border-purple-700">
+    <div className="bg-[#41434c] p-5 rounded-lg">
 <a href="">{icons}</a>  
   </div>
     </footer>
@@ -214,7 +214,7 @@ return (
         <section>
         <Container   title="A Propos">
               <div  className="flex">
-                <div className="w-2/6">
+                <div className="w-2/6 border-4 border-blue-300 h-screen">
                   <Avatar/>
                   <Links gitHub=<AiFillGithub className='w-7 h-7'/>
                       LinkeDin=<AiFillLinkedin className='rounded-xl w-7 h-7'/>   
@@ -248,7 +248,7 @@ return (
           </Container>
         </section>
 
-        <section id="skills" className='border-4 border-neutral-950 '>
+        <section id="skills"  >
           <Container  title="Compétence">
             <section className='flex gap-5  h-full'>
             <div className='w-2/6  rounded-lg  gap-2 '>
@@ -359,7 +359,7 @@ return (
         <Container  title="Portofolio"/>
  */}
 
-        <div className="mt-3 mx-5 gap-5 rounded-lg flex p-3 border-4 border-slate-900 bg-[#9e826f]">
+        <div className="mt-3 mx-5 gap-5 rounded-lg flex p-3 bg-[#9e826f]">
             <Footer icons=<BsFillPhoneFill className='w-6 h-6 fill-[#9e826f]'/>/>
             <Footer icons=<IoIosMail className='w-6 h-6 fill-[#9e826f]'/>/>
             <Footer icons=<IoMdDownload className='w-6 h-6 fill-[#9e826f]'/>/>
