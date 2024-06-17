@@ -35,12 +35,11 @@ function Nav() {
   return (
     <header>
     <nav className='p-2 gap-4 mr-5'>
-      <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold ">
-        <li className="ml-auto p-1"><a  href="#"><AiFillHome className=''/></a></li>
+      <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold fixed inset-x-0 top-0  px-5 py-1">
+        <li className="ml-auto p-1"><a  href="#"><AiFillHome/></a></li>
         <li><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
         <li><a href="#works">Parcours</a></li>
-        <li><a href="#portofolio">Portofolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ol>
     </nav>
@@ -81,7 +80,7 @@ function Container({title,children}:any) {
 
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
-      <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5 border-4 border-purple-600">
+      <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5">
        <ul className="text-[#efe0fe] ">
           <li><a className='flex gap-2 italic'  href={Llinkedin}>{gitHub} gitHub</a></li>
           <li><a className='flex gap-2 italic' href={Lgit}>{LinkeDin} Linkedin</a></li>
@@ -130,7 +129,7 @@ function IconsSkils({icons}:any) {
   
   function Avatar() {
     return (
-        <Image className='rounded-lg mx-auto my-5 w-3/6 border-4 border-neutral-800'
+        <Image className='rounded-lg mx-auto my-5 mb-5 w-3/6 border-4 '
           src="/image/Avatar.png"
           alt=" "
           width={300}
@@ -210,8 +209,8 @@ export default function Site() {
 return (
   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full ">
       <Nav/>
-      <section id="About">
-        <section>
+      <section >
+        <section id="about" >
         <Container   title="A Propos">
               <div  className="flex">
                 <div className="w-2/6 border-4 border-blue-300 h-screen">
@@ -337,29 +336,31 @@ return (
           </Container>
         </section>
         
-        <Container id="works" title="Parcours">
-          <ContainerWorks className="bg-gray-400">
-            <WorkTitleL title="un titre"/>
-            <TextWorkL text="un text"/>
-          </ContainerWorks>
+        <section  id="works">
+        <Container title="Parcours">
+            <ContainerWorks className="bg-gray-400">
+              <WorkTitleL title="un titre"/>
+              <TextWorkL text="un text"/>
+            </ContainerWorks>
 
-          <ContainerWorks className="bg-gray-400">
-            <WorkTitleR title="un titre"/>
-            <TextWorkR text="un text"/>
-          </ContainerWorks>
+            <ContainerWorks className="bg-gray-400">
+              <WorkTitleR title="un titre"/>
+              <TextWorkR text="un text"/>
+            </ContainerWorks>
 
 
-          <ContainerWorks className="bg-gray-400">
-            <WorkTitleL title="un titre"/>
-            <TextWorkL text="un text"/>
-          </ContainerWorks>
-        </Container>
+            <ContainerWorks className="bg-gray-400">
+              <WorkTitleL title="un titre"/>
+              <TextWorkL text="un text"/>
+            </ContainerWorks>
+          </Container>
+        </section>
         {/**
  * 
         <Container  title="Portofolio"/>
  */}
 
-        <div className="mt-3 mx-5 gap-5 rounded-lg flex p-3 bg-[#9e826f]">
+        <div className="mt-3 mx-5 gap-5 rounded-lg flex p-3 bg-[#9e826f]" id="contact">
             <Footer icons=<BsFillPhoneFill className='w-6 h-6 fill-[#9e826f]'/>/>
             <Footer icons=<IoIosMail className='w-6 h-6 fill-[#9e826f]'/>/>
             <Footer icons=<IoMdDownload className='w-6 h-6 fill-[#9e826f]'/>/>
