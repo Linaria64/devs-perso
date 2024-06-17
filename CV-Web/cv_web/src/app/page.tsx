@@ -199,7 +199,6 @@ function Footer({icons}:any) {
 
 
 /**
- * TODO faire en sorte que le menu nav soit toujours en haut de l'écran
  * TODO Mettre a la bonne taille les éléments de la sectionn a propos
  * TODO Faire en sorte que les Boutons du footer link sur les bonnes chose
  * TODO Commencer le responsive
@@ -207,13 +206,13 @@ function Footer({icons}:any) {
  */
 export default function Site() {
 return (
-  <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3] h-full w-full ">
+  <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3]">
       <Nav/>
       <section >
-        <section id="about" >
+        <section id="about" className='h-full w-full'>
         <Container   title="A Propos">
               <div  className="flex">
-                <div className="w-2/6 border-4 border-blue-300 h-screen">
+                <div className="w-2/6 space-y-20">
                   <Avatar/>
                   <Links gitHub=<AiFillGithub className='w-7 h-7'/>
                       LinkeDin=<AiFillLinkedin className='rounded-xl w-7 h-7'/>   
@@ -222,10 +221,10 @@ return (
                       />
                 </div>
 
-               <div className="w-full">
+               <div className="w-full h-screen space-y-40 ">
                 <Text text="lorem ipsum"/>
 
-                <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-4/6 h-2/6 ">
+                <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-2/4 ">
                   <Icons icons=<AiFillCode className='w-14 h-14'/>
                     text="Front-End" 
                   />
