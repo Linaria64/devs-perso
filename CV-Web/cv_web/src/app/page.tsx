@@ -30,7 +30,7 @@ import { IoMdDownload } from "react-icons/io";
 /**
  * Menu de navigation
  * @returns NavJSX
- */
+ */   
 function Nav() {
   return (
     <header>
@@ -129,7 +129,7 @@ function IconsSkils({icons}:any) {
   
   function Avatar() {
     return (
-        <Image className='rounded-lg mx-auto my-5 mb-5 w-3/6 border-4 '
+        <Image className='rounded-lg mx-auto my-5 mb-5 w-3/6 '
           src="/image/Avatar.png"
           alt=" "
           width={300}
@@ -143,24 +143,24 @@ function IconsSkils({icons}:any) {
     return <div className='mb-2 rounded-lg bg-[#41434c] p-1'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
   }
   function WorkTitleL({title}:any) {
-    return <div className='p-3 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 mr-auto mb-3'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
+    return <div className='p-3  bg-[#41434c] rounded-lg w-1/4 mx-48 mr-auto mb-3'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
   }
 
   function WorkTitleR({title}:any) {
-    return <div className='p-3 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 ml-auto mb-3'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
+    return <div className='p-3 bg-[#41434c] rounded-lg w-1/4 mx-48 ml-auto mb-3'><h2 className='text-center rounded-lg p-2 text-[#efe0fe] font-semibold'>{title}</h2></div>
   }
 
 
   function TextWorkL({text}:any) {
     return (
-      <div className='p-5 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 mr-auto'>
+      <div className='p-5 bg-[#41434c] rounded-lg w-2/4 mr-auto'>
         <p className=''>{text}</p>
       </div>
     )
   }
   function TextWorkR({text}:any) {
     return (
-      <div className='p-5 border-4 border-slate-100 bg-[#41434c] rounded-lg w-2/4 ml-auto'>
+      <div className='p-5 bg-[#41434c] rounded-lg w-2/4 ml-auto'>
         <p className=''>{text}</p>
       </div>
     )
@@ -180,14 +180,32 @@ function ContainerWorks({children}:any) {
  * 
  * @returns Footer JSX
  */
-function Footer({icons}:any) {
+function Footer({tag,icons}:any) {
   return (
     <footer className="mx-auto">
     <div className="bg-[#41434c] p-5 rounded-lg">
-<a href="">{icons}</a>  
+<a href={tag}>{icons}</a>  
   </div>
     </footer>
 )
+}
+
+
+
+function Download({icons}:any) {
+  
+/*  function  Handleclick() {
+    window.open(CV)
+  } */
+
+  return (
+    <footer className="mx-auto">
+    <div className="bg-[#41434c] p-5 rounded-lg">
+  </div>
+    </footer>
+)
+
+
 }
 
 /**
@@ -199,7 +217,6 @@ function Footer({icons}:any) {
 
 
 /**
- * TODO Mettre a la bonne taille les éléments de la sectionn a propos
  * TODO Faire en sorte que les Boutons du footer link sur les bonnes chose
  * TODO Commencer le responsive
  * @returns 
@@ -356,13 +373,15 @@ return (
         </section>
         {/**
  * 
-        <Container  title="Portofolio"/>
+        <Container  title="Portofolio" 
+        
+        />
  */}
 
         <div className="mt-3 mx-5 gap-5 rounded-lg flex p-3 bg-[#9e826f]" id="contact">
-            <Footer icons=<BsFillPhoneFill className='w-6 h-6 fill-[#9e826f]'/>/>
-            <Footer icons=<IoIosMail className='w-6 h-6 fill-[#9e826f]'/>/>
-            <Footer icons=<IoMdDownload className='w-6 h-6 fill-[#9e826f]'/>/>
+            <Footer tag="tel:0784833599" icons=<BsFillPhoneFill className='w-6 h-6 fill-[#9e826f]'/>/>
+            <Footer tag="mailto:dorianpro77@proton.me" icons=<IoIosMail className='w-6 h-6 fill-[#9e826f]'/>/>
+            <Download icons=<IoMdDownload className='w-6 h-6 fill-[#9e826f]'/>/>
           </div>
     </section>
   </main>
