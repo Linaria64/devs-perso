@@ -1,11 +1,13 @@
 "use client";
-import Image from 'next/image'
-import {AiFillGithub} from 'react-icons/ai'
-import {AiFillLinkedin} from 'react-icons/ai'
-import {AiFillHome} from 'react-icons/ai'
-import {AiFillCode} from 'react-icons/ai'
-import {AiFillDatabase} from 'react-icons/ai'
-import {AiOutlineDocker} from 'react-icons/ai'
+
+import  pdf  from "../type.s";
+import Image from 'next/image';
+import {AiFillGithub} from 'react-icons/ai';
+import {AiFillLinkedin} from 'react-icons/ai';
+import {AiFillHome} from 'react-icons/ai';
+import {AiFillCode} from 'react-icons/ai';
+import {AiFillDatabase} from 'react-icons/ai';
+import {AiOutlineDocker} from 'react-icons/ai';
 import { IoGitBranchOutline } from "react-icons/io5";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiCsswizardry } from "react-icons/si";
@@ -27,6 +29,7 @@ import { SiFigma } from "react-icons/si";
 import { BsFillPhoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { IoMdDownload } from "react-icons/io";
+
 /**
  * Menu de navigation
  * @returns NavJSX
@@ -194,13 +197,12 @@ function Footer({tag,icons}:any) {
 
 function Download({icons}:any) {
   
-/*  function  Handleclick() {
-    window.open(CV)
-  } */
+  const resumePDF = pdf("CV_Pro_dorian_finalV2.pdf");
 
   return (
     <footer className="mx-auto">
     <div className="bg-[#41434c] p-5 rounded-lg">
+      <a href={resumePDF} download>{icons}</a>
   </div>
     </footer>
 )
