@@ -230,7 +230,7 @@ return (
       <section>
         <section id="about">
         <Container   title="A Propos">
-              <div className="border-4 border-blue-700 flex">
+              <div className="flex">
                 <div className="w-2/6">
                   <Avatar/>
                   <Links gitHub=<AiFillGithub className='w-7 h-7'/>
@@ -240,7 +240,7 @@ return (
                       />
                 </div>
 
-               <div className=" ">
+               <div className="w-full">
                 <Text text="lorem ipsum"/>
 
                 <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-2/4 ">
