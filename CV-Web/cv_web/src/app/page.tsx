@@ -56,7 +56,7 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <div className=" mt-3  rounded-lg  bg-[#9e826f] h-screen w-full">
+  <div className=" mt-3  rounded-lg  bg-[#9e826f] flex flex-col">
     <div className="border-transparent border-4 ">
      <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
     </div>
@@ -219,19 +219,19 @@ function Download({icons}:any) {
 
 
 /**
- * TODO Faire en sorte que les Boutons du footer link sur les bonnes chose
- * TODO Commencer le responsive
+ * TODO Faire en sorte que le site soit responsive
+ * TODO heberger le site
  * @returns 
  */
 export default function Site() {
 return (
   <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3]">
       <Nav/>
-      <section >
-        <section id="about" className='h-full w-full'>
+      <section>
+        <section id="about">
         <Container   title="A Propos">
-              <div  className="flex">
-                <div className="w-2/6 space-y-20">
+              <div className="border-4 border-blue-700 flex">
+                <div className="w-2/6">
                   <Avatar/>
                   <Links gitHub=<AiFillGithub className='w-7 h-7'/>
                       LinkeDin=<AiFillLinkedin className='rounded-xl w-7 h-7'/>   
@@ -240,7 +240,7 @@ return (
                       />
                 </div>
 
-               <div className="w-full h-screen space-y-40 ">
+               <div className=" ">
                 <Text text="lorem ipsum"/>
 
                 <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-2/4 ">
