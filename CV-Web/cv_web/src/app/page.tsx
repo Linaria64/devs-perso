@@ -202,7 +202,7 @@ function Download({icons}:any) {
   return (
     <footer className="mx-auto">
     <div className="bg-[#41434c] p-5 rounded-lg">
-      <a href={resumePDF} download>{icons}</a>
+      <a href={resumePDF} download={resumePDF}  >{icons}</a>
   </div>
     </footer>
 )
