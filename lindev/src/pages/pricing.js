@@ -1,11 +1,31 @@
 import React from "react";
 
 function Pricing() {
-    <>
-    return(
-        <h1>Titre de la page des prix</h1>
-    );
-    </>
+  return (
+    <div>
+        <div>
+            <div>
+                <h1>
+                    title
+                </h1>
+
+                <div>
+                    <p >
+                    INSERER IMAGE ICI
+                    </p>
+                </div>
+
+                <div>
+                    <button>
+                        <h3>
+                            Voir plus
+                        </h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  );
 
 }
 

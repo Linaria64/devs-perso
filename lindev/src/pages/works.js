@@ -15,7 +15,7 @@ function Works() {
                     </div>
 
                     <div>
-                        <img src="/" alt="">Inserer image ici</img>
+                        <p>INSERER IMAGE ICI</p>
                     </div>
 
                     <div>
