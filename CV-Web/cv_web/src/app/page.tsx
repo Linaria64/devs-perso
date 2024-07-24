@@ -38,7 +38,7 @@ function Nav() {
   return (
     <header>
     <nav className='p-2 gap-4 mr-5'>
-      <ol className="flex gap-2 text-[#7a9fd7]/[07] font-bold fixed inset-x-0 top-0  px-5 py-1">
+      <ol className="flex gap-2 text-[#c7cbd2]/[07] font-bold fixed inset-x-0 top-0  px-5 py-1">
         <li className="ml-auto p-1"><a  href="#"><AiFillHome/></a></li>
         <li><a href="#about">A Propos</a></li>
         <li><a href="#skills">Compétence</a></li>
@@ -56,9 +56,9 @@ function Nav() {
  */
 function Container({title,children}:any) {
   return (
-  <div className=" mt-3  rounded-lg  bg-[#9e826f] flex flex-col">
+  <div className=" mt-3  rounded-lg   flex flex-col w-[97%] mx-auto">
     <div className="border-transparent border-4 ">
-     <h1 className="text-center bg-[#c7bab4] w-2/6 mx-auto my-2 p-1 text-[#805252] font-bold rounded-lg">{title}</h1>
+     <h1 className="text-center bg-[#c7cbd2] w-2/6 mx-auto my-2 p-1 text-[#436371] font-bold rounded-lg">{title}</h1>
     </div>
    {children}
    </div>
@@ -75,16 +75,16 @@ function Container({title,children}:any) {
   function Text({text}:any) {
 
     return (
-      <div className="rounded-lg bg-[#41434c] my-5 mx-auto w-5/6 h-3/6 ">
-        <p className="text-[#efe0fe]">{text}</p>
+      <div className="rounded-lg bg-[#715143] my-5 mx-auto w-5/6 h-3/6 ">
+        <p className="text-[#c7cbd2]">{text}</p>
       </div>
     )
   }
 
   function Links({Llinkedin,Lgit,gitHub, LinkeDin}:any) {
     return (
-      <div className="rounded-lg bg-[#41434c] w-3/6 p-2  mx-auto mb-5">
-       <ul className="text-[#efe0fe] ">
+      <div className="rounded-lg bg-[#715143] w-3/6 p-2  mx-auto mb-5">
+       <ul className="text-[#c7cbd2] ">
           <li><a className='flex gap-2 italic'  href={Llinkedin}>{gitHub} gitHub</a></li>
           <li><a className='flex gap-2 italic' href={Lgit}>{LinkeDin} Linkedin</a></li>
         </ul>
@@ -95,7 +95,7 @@ function Container({title,children}:any) {
   function Icons({icons,text}:any){
     return (
         <ul className='p-1'>
-          <li className='flex flex-col gap-2'>{icons}<p className='text-[#efe0fe]'>{text}</p></li>
+          <li className='flex flex-col gap-2'>{icons}<p className='text-[#c7cbd2]'>{text}</p></li>
         </ul>
 
       )
@@ -214,6 +214,7 @@ function Download({icons}:any) {
  * Function all in one
  * Call all JSX Element
  * @returns all jsx element
+ * 
  */
 
 
@@ -225,7 +226,7 @@ function Download({icons}:any) {
  */
 export default function Site() {
 return (
-  <main className=" bg-gradient-to-r from-[#e1e3e7] to-[#c9ccd3]">
+  <main className=" bg-gradient-to-r from-[#F0F2F0]  to-[#000C40]">
       <Nav/>
       <section>
         <section id="about">
@@ -243,7 +244,7 @@ return (
                <div className="w-full">
                 <Text text="lorem ipsum"/>
 
-                <div  className="rounded-lg bg-[#41434c] flex  gap-x-12  mx-auto w-2/4 ">
+                <div  className="rounded-lg bg-[#715143] flex  gap-x-12  mx-auto w-2/4 ">
                   <Icons icons=<AiFillCode className='w-14 h-14'/>
                     text="Front-End" 
                   />
