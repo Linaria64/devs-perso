@@ -7,10 +7,10 @@ import Pricing from './pages/pricing';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 function App() {
   return (
-    <Router>
-      <div>
+     <Router>
+      <div className="h-screen w-full bg-cover bg-center text-white" style={{ backgroundImage: "url('/fond_noir_sobre_ia.png')"}}>
         <nav>
-          <ul>
+          <ul className='flex gap-8'>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/works">Works</Link></li>
             <li><Link to="/pricing">Pricing</Link></li>
