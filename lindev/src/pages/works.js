@@ -1,11 +1,35 @@
 import React from "react";
 
 function Works() {
-    <>
+    
     return(
-        <h1>Titre de la page de mes travaux</h1>
+        <div>
+            <div>
+                <div>
+                    <h2>Design</h2>
+                </div>
+
+                <div>
+                    <div>
+                        <h2>Titre</h2>
+                    </div>
+
+                    <div>
+                        <img src="/" alt="">Inserer image ici</img>
+                    </div>
+
+                    <div>
+                        <button>
+                            <h3>
+                                Voir Plus
+                            </h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
-    </>
+    
 
 }
 
