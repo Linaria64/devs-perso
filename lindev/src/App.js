@@ -24,8 +24,13 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+
+        <footer>
+        <p>© Copyright 2024 Dorian_Soudan</p>
+      </footer>
       </div>
     </Router>
+    
   );
 }
 
